@@ -1,0 +1,80 @@
+﻿@model Biblioteca.Models.Prestamo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Prestamo</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idPrestamo" class="control-label"></label>
+                <input asp-for="idPrestamo" class="form-control" readonly/>
+                <span asp-validation-for="idPrestamo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idEstadoPrestamo" class="control-label"></label>
+                <select asp-for="idEstadoPrestamo" asp-items="@ViewBag.estados" class="form-select"></select>
+                <span asp-validation-for="idEstadoPrestamo" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="idPersona" class="control-label"></label>
+                <input asp-for="idPersona" class="form-control" readonly/>
+                <span asp-validation-for="idPersona" class="text-danger"></span>
+            </div>  
+            
+            <div class="form-group">
+                <label asp-for="idLibro" class="control-label"></label>
+                <input asp-for="idLibro" class="form-control" readonly/>
+                <span asp-validation-for="idLibro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaDevolucion" class="control-label"></label>
+                <input asp-for="fechaDevolucion" class="form-control" readonly/>
+                <span asp-validation-for="fechaDevolucion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaConfirmacion" class="control-label"></label>
+                <input asp-for="fechaConfirmacion" class="form-control" />
+                <span asp-validation-for="fechaConfirmacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="estadoEntregado" class="control-label"></label>
+                <input asp-for="estadoEntregado" class="form-control" readonly/>
+                <span asp-validation-for="estadoEntregado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="estadoRecibido" class="control-label"></label>
+                <input asp-for="estadoRecibido" class="form-control" />
+                <span asp-validation-for="estadoRecibido" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="estado" /> @Html.DisplayNameFor(model => model.estado)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaCreacion" class="control-label"></label>
+                <input asp-for="fechaCreacion" class="form-control" readonly/>
+                <span asp-validation-for="fechaCreacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @ViewBag.mensaje
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
