@@ -1,0 +1,59 @@
+﻿@model Biblioteca.Models.Persona
+@{
+    ViewData["Title"] = "Edit";
+}
+<h5>Edit</h5>
+
+<h4>Persona</h4>
+<hr />
+<div class="d-flex justify-content-center align-items-center container ">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="idPersona" class="control-label"></label>
+                <input asp-for="idPersona" class="form-control" readonly/>
+                <span asp-validation-for="idPersona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nombrePer" class="control-label"></label>
+                <input asp-for="nombrePer" class="form-control" />
+                <span asp-validation-for="nombrePer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="apellidoPer" class="control-label"></label>
+                <input asp-for="apellidoPer" class="form-control" />
+                <span asp-validation-for="apellidoPer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="correo" class="control-label"></label>
+                <input asp-for="correo" class="form-control" />
+                <span asp-validation-for="correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="clave" class="control-label"></label>
+                <input asp-for="clave" class="form-control" />
+                <span asp-validation-for="clave" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="IdtipoPersona" class="control-label"></label>
+                <select asp-for="IdtipoPersona" asp-items="@ViewBag.tipoPersonas" class="form-select"></select>
+                <span asp-validation-for="IdtipoPersona" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="estado" /> @Html.DisplayNameFor(model => model.estado)
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div> <a asp-action="Index">Back to List</a>
+</div>
+@ViewBag.Alert
+
+
+

@@ -1,0 +1,82 @@
+﻿@model Biblioteca.Models.Prestamo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Prestamo</h4>
+<hr />
+<div class="d-flex justify-content-center align-items-center container ">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!--<div class="form-group">
+                <label asp-for="idPrestamo" class="control-label"></label>
+                <input asp-for="idPrestamo" class="form-control" />
+                <span asp-validation-for="idPrestamo" class="text-danger"></span>
+            </div>-->
+            <!--<div class="form-group">
+                <label asp-for="idEstadoPrestamo" class="control-label"></label>
+                <input asp-for="idEstadoPrestamo" class="form-control" />
+                <span asp-validation-for="idEstadoPrestamo" class="text-danger"></span>
+            </div>-->
+            <div class="form-group">
+                <label asp-for="idPersona" class="control-label"></label>
+                <select asp-for="idPersona" asp-items="@ViewBag.personas" class="form-select"></select>
+                <span asp-validation-for="idPersona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idLibro" class="control-label"></label>
+                <select asp-for="idLibro" asp-items="@ViewBag.libros" class="form-select"></select>
+                <span asp-validation-for="idLibro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaDevolucion" class="control-label"></label>
+                <input asp-for="fechaDevolucion" class="form-control" />
+                <span asp-validation-for="fechaDevolucion" class="text-danger"></span>
+            </div>
+            <!--<div class="form-group">
+                <label asp-for="fechaConfirmacion" class="control-label"></label>
+                <input asp-for="fechaConfirmacion" class="form-control" />
+                <span asp-validation-for="fechaConfirmacion" class="text-danger"></span>
+            </div>-->
+            <div class="form-group">
+                <label asp-for="estadoEntregado" class="control-label"></label>
+                <input asp-for="estadoEntregado" class="form-control" />
+                <span asp-validation-for="estadoEntregado" class="text-danger"></span>
+            </div>
+            <!--<div class="form-group">
+                <label asp-for="estadoRecibido" class="control-label"></label>
+                <input asp-for="estadoRecibido" class="form-control" />
+                <span asp-validation-for="estadoRecibido" class="text-danger"></span>
+            </div>-->
+          
+            <!--
+            <div class="form-group">
+                <label asp-for="fechaCreacion" class="control-label"></label>
+                <input asp-for="fechaCreacion" class="form-control" />
+                <span asp-validation-for="fechaCreacion" class="text-danger"></span>
+            </div>-->
+            <div class="form-group">
+                <a asp-action="Create" class="btn btn-primary">Nuevo</a>
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-primary">Retornar</a>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @if (ViewBag.Alert != null){
+  <script>
+    alert("@ViewBag.Alert");
+  </script>  
+} 
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

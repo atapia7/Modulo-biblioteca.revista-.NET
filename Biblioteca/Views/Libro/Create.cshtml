@@ -1,0 +1,79 @@
+﻿@model Biblioteca.Models.Libro
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h4>Create</h4><br />
+<h4>Libro</h4>
+<div class="d-flex justify-content-center align-items-center container ">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <h5 >@ViewBag.mensaje</h5>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" hidden="hidden" >
+                <label asp-for="idLibro" class="control-label"></label>
+                <input asp-for="idLibro" class="form-control" />
+                <span asp-validation-for="idLibro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tituloLib" class="control-label"></label>
+                <input asp-for="tituloLib" class="form-control" />
+                <span asp-validation-for="tituloLib" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nombrePortada" class="control-label"></label>
+                <input asp-for="nombrePortada" class="form-control" />
+                <span asp-validation-for="nombrePortada" class="text-danger"></span>
+            </div>
+            
+           <div class="form-group">
+                <label asp-for="idAutor" class="control-label">Autor </label>
+                <select asp-for="idAutor" asp-items="@ViewBag.autores" class="form-select"></select>
+                <span asp-validation-for="idAutor" class="text-danger"></span>
+            </div> 
+            
+            <div class="form-group">
+                <label asp-for="idCategoria" class="control-label">Categoria</label>
+                <select asp-for="idCategoria" asp-items="@ViewBag.categorias" class="form-select"></select>
+                <span asp-validation-for="idCategoria" class="text-danger"></span>
+            </div>
+            
+             <div class="form-group">
+                <label asp-for="idEditorial" class="control-label">Editorial</label>
+                <select asp-for="idEditorial" asp-items="@ViewBag.editoriales" class="form-select"></select>
+                <span asp-validation-for="idEditorial" class="text-danger"></span>
+            </div>           
+            <div class="form-group">
+                <label asp-for="ubicacionLib" class="control-label"></label>
+                <input asp-for="ubicacionLib" class="form-control" />
+                <span asp-validation-for="ubicacionLib" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ejemplares" class="control-label"></label>
+                <input asp-for="ejemplares" class="form-control" />
+                <span asp-validation-for="ejemplares" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="estado" class="control-label"></label>
+                <input asp-for="estado" class="form-control" />
+                <span asp-validation-for="estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+ @if (ViewBag.Alert != null){
+  <script>
+    alert("@ViewBag.Alert");
+  </script>  
+} 
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

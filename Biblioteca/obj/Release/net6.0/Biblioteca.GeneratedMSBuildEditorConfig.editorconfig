@@ -1,0 +1,144 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Biblioteca
+build_property.RootNamespace = Biblioteca
+build_property.ProjectDir = C:\6 ClCLO\Servicios web I\Biblioteca\Biblioteca\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\6 ClCLO\Servicios web I\Biblioteca\Biblioteca
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Acceso/Logueo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ3Vlby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Autor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3JcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Autor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3JcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Autor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Categoria/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Categoria/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Categoria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/ECommerce/Canasta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRUNvbW1lcmNlXENhbmFzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/ECommerce/Pedido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRUNvbW1lcmNlXFBlZGlkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/ECommerce/Portal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRUNvbW1lcmNlXFBvcnRhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/ECommerce/Seleccionar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRUNvbW1lcmNlXFNlbGVjY2lvbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/ECommerce/ventana.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRUNvbW1lcmNlXHZlbnRhbmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Editorial/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Editorial/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Editorial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Libro/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Libro/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Libro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Persona/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Persona/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Persona/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Prestamos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Prestamos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Prestamos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Prestamos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/6 ClCLO/Servicios web I/Biblioteca/Biblioteca/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bunr9m1pqn

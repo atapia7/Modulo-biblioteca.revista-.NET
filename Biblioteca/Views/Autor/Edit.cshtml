@@ -1,0 +1,52 @@
+﻿@model Biblioteca.Models.Autor
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Autor</h4>
+<hr />
+<div class="d-flex justify-content-center align-items-center container">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdAutor" class="control-label"></label>
+                <input asp-for="IdAutor" readonly class="form-control" />
+                <span asp-validation-for="IdAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomEstado" class="control-label">Estado</label>
+                <select asp-for="IdEstado" asp-items="@ViewBag.estados" class="form-select"></select>
+                <span asp-validation-for="IdEstado" class="text-danger"></span>
+            </div>
+                      <br />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+            <br />
+        </form>
+    </div>
+</div>
+<div>
+   @if (ViewBag.Alert != null){
+  <script>
+    alert("@ViewBag.Alert");
+  </script>  
+} 
+</div>
+<br />
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

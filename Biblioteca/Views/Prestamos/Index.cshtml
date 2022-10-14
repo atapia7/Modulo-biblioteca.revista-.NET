@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Biblioteca.Models.Prestamo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Mantenimiento Prestamos
+</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-secondary">añadir</a>
+</p>
+
+<div>
+    @ViewBag.mensaje
+</div>
+<table class="table ">
+   <thead class="thead-dark">
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.idEstadoPrestamo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idPersona)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idLibro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaDevolucion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaConfirmacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estadoEntregado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estadoRecibido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaCreacion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td hidden="hidden">
+                @Html.DisplayFor(modelItem => item.idPrestamo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idEstadoPrestamo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idPersona)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idLibro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaDevolucion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaConfirmacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estadoEntregado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estadoRecibido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaCreacion)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit"      ,new {  codigo=item.idPrestamo}, new { @class = "btn btn-secondary" })  
+                @Html.ActionLink("Delete","Delete"   ,new {  id=item.idPrestamo}, new { @class = "btn btn-danger" })       
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
