@@ -7,13 +7,11 @@ namespace Biblioteca.Controllers
 {
     public class PersonaController : Controller
     {
-        string cadena = @"server=.;database=DB_BIBLIOTECA;Trusted_Connection = True;" +
-            "MultipleActiveResultSets = True;TrustServerCertificate = False;Encrypt = False";
         IEnumerable<Persona> personas()
         {
 
             List<Persona> personas = new List<Persona>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
 
                 SqlCommand cmd = new SqlCommand("usp_listar_Personas", cn);
@@ -45,7 +43,7 @@ namespace Biblioteca.Controllers
         IEnumerable<TipoPersona> tipoPersonas()
         {
             List<TipoPersona> tipoPersonas = new List<TipoPersona>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select * from TIPO_PERSONA", cn);
                 cmd.CommandType = CommandType.Text;
@@ -77,7 +75,7 @@ namespace Biblioteca.Controllers
         public async Task<IActionResult> Create(Persona reg)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
@@ -120,7 +118,7 @@ namespace Biblioteca.Controllers
         public async Task<IActionResult> Edit(Persona reg)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
@@ -150,7 +148,7 @@ namespace Biblioteca.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {

@@ -7,13 +7,11 @@ namespace Biblioteca.Controllers
 {
     public class AutorController : Controller
     {
-        string cadena = @"server=.;database=DB_BIBLIOTECA;Trusted_Connection = True;" +
-            "MultipleActiveResultSets = True;TrustServerCertificate = False;Encrypt = False";
 
         IEnumerable<Estado> estados()
         {
             List<Estado> estados = new List<Estado>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select * from ESTADO_AUTOR", cn);
                 cmd.CommandType = CommandType.Text;
@@ -33,7 +31,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Autor> autores()
         {
             List<Autor> autores = new List<Autor>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select a.IdAutor,a.Descripcion,e.IdEstado,e.NombreEstado from AUTOR a join ESTADO_AUTOR e on a.IdEstado=e.IdEstado ", cn);
                 cmd.CommandType = CommandType.Text;
@@ -66,7 +64,7 @@ namespace Biblioteca.Controllers
         {
             string mensaje = "";
 
-            using(SqlConnection cn=new SqlConnection(cadena))
+            using(SqlConnection cn=new SqlConnection(Conexion.cadena))
             {
                 try
                 {
@@ -106,7 +104,7 @@ ViewBag.estados = new SelectList(await Task.Run(() => estados()), "IdEstado", "N
         [HttpPost] public async Task<IActionResult> Edit(Autor reg)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {

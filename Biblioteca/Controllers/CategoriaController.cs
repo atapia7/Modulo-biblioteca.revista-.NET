@@ -7,12 +7,10 @@ namespace Biblioteca.Controllers
 {
     public class CategoriaController : Controller
     {
-        string cadena = @"server=.;database=DB_BIBLIOTECA;Trusted_Connection = True;" +
-            "MultipleActiveResultSets = True;TrustServerCertificate = False;Encrypt = False";
         IEnumerable<Estado> estados()
         {
             List<Estado> estados = new List<Estado>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select * from ESTADO_CATEGORIA", cn);
                 cmd.CommandType = CommandType.Text;
@@ -32,7 +30,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Categoria> categorias()
         {
             List<Categoria> categorias = new List<Categoria>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select a.IdCategoria,a.Nombre,e.IdEstado,e.NombreEstado from CATEGORIA a join ESTADO_CATEGORIA e on a.IdEstado=e.IdEstado ", cn);
                 cmd.CommandType = CommandType.Text;
@@ -62,7 +60,7 @@ namespace Biblioteca.Controllers
         [HttpPost] public async Task<IActionResult> Create(Categoria reg)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
@@ -101,7 +99,7 @@ namespace Biblioteca.Controllers
         public async Task<IActionResult> Edit(Categoria reg)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {

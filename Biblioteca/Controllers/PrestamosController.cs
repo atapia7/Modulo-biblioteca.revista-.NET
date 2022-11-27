@@ -9,12 +9,10 @@ namespace Biblioteca.Controllers
 {
     public class PrestamosController : Controller
     {
-        string cadena = @"server=.;database=DB_BIBLIOTECA;Trusted_Connection = True;" +
-            "MultipleActiveResultSets = True;TrustServerCertificate = False;Encrypt = False";
         IEnumerable<EstadoPrestamo> estados_prestamos()
         {
             List<EstadoPrestamo> estados_prestamos = new List<EstadoPrestamo>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select IdEstadoPrestamo,Descripcion from ESTADO_PRESTAMO", cn);
                 cmd.CommandType = CommandType.Text;
@@ -34,7 +32,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Libro> libros()
         {
             List<Libro> libros = new List<Libro>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select IdLibro,Titulo from LIBRO", cn);
                 cmd.CommandType = CommandType.Text;
@@ -53,7 +51,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Persona> personas()
         {
             List<Persona> personas = new List<Persona>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select IdPersona,Nombre from PERSONA", cn);
                 cmd.CommandType = CommandType.Text;
@@ -73,7 +71,7 @@ namespace Biblioteca.Controllers
 
         IEnumerable<Prestamo> prestamos() {
             List<Prestamo> prestamos = new List<Prestamo>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("exec usp_listaPrestamo", cn);
                 cmd.CommandType = CommandType.Text;

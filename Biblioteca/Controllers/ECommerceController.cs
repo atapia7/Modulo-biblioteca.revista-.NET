@@ -10,12 +10,11 @@ namespace Biblioteca.Controllers
 {
     public class ECommerceController : Controller
     {
-        string cadena = @"server=.;database = DB_BIBLIOTECA;Trusted_Connection = True; MultipleActiveResultSets = True;TrustServerCertificate = False;Encrypt = False";
-
+       
         IEnumerable<Revista> listado()
         {
             List<Revista> revista = new List<Revista>();
-            using (SqlConnection con = new SqlConnection(cadena))
+            using (SqlConnection con = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("exec usp_Revistas", con);
                 con.Open();
@@ -136,7 +135,7 @@ namespace Biblioteca.Controllers
         public IActionResult Pedido(string dni, string nombre)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 List<Registro> auxiliar =JsonConvert.DeserializeObject<List<Registro>>(HttpContext.Session.GetString("canasta"));
                 cn.Open();

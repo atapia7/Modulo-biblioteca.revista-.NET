@@ -8,13 +8,11 @@ namespace Biblioteca.Controllers
 {
     public class AccesoController : Controller
     {
-        string cadena = @"server=.;database=DB_BIBLIOTECA;Trusted_Connection = True;" +
-            "MultipleActiveResultSets = True;TrustServerCertificate = False;Encrypt = False";
         string sesion = ""; //sera el key del Session
         int valida(string login, string clave) //recupero el valor de @sw
         {
             int sw = 0;
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 cn.Open();
                SqlCommand cmd = new SqlCommand("usp_verifica_acceso", cn);

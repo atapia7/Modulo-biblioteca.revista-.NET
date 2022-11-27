@@ -7,12 +7,10 @@ namespace Biblioteca.Controllers
 {
     public class LibroController : Controller
     {
-        string cadena = @"server=.;database=DB_BIBLIOTECA;Trusted_Connection = True;" +
-            "MultipleActiveResultSets = True;TrustServerCertificate = False;Encrypt = False";
         IEnumerable<Estado> estados()
         {
             List<Estado> estados = new List<Estado>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select * from ESTADO_CATEGORIA", cn);
                 cmd.CommandType = CommandType.Text;
@@ -32,7 +30,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Editorial> editoriales()
         {
             List<Editorial> editoriales = new List<Editorial>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select * from EDITORIAL", cn);
                 cmd.CommandType = CommandType.Text;
@@ -52,7 +50,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Categoria> categorias()
         {
             List<Categoria> categorias = new List<Categoria>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select * from CATEGORIA", cn);
                 cmd.CommandType = CommandType.Text;
@@ -72,7 +70,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Autor> autores()
         {
             List<Autor> autores = new List<Autor>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("Select * from AUTOR", cn);
                 cmd.CommandType = CommandType.Text;
@@ -93,7 +91,7 @@ namespace Biblioteca.Controllers
         IEnumerable<Libro> libros()
         {
             List<Libro> libros = new List<Libro>();
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 SqlCommand cmd = new SqlCommand("EXEC listalibro", cn);
                 cmd.CommandType = CommandType.Text;
@@ -135,7 +133,7 @@ namespace Biblioteca.Controllers
         [HttpPost] public async Task<IActionResult> Create(Libro reg)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
@@ -182,7 +180,7 @@ namespace Biblioteca.Controllers
         [HttpPost] public async Task<IActionResult> Edit(Libro reg)
         {
             string mensaje = "";
-            using (SqlConnection cn = new SqlConnection(cadena))
+            using (SqlConnection cn = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
