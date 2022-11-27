@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3oMenS0G0+JOsTtfWZ1dNmW7xnkBnRS1V8SMu+CiCMGcqnu7UGPNExbyN8+kJEGvp6B9HQKlpAi4ZSYTCvSmGA==",
+  "dgSpecHash": "+5dgYX4zsijLaRXiqhSrk525Z40mY7khxmEVQLDuzeFCll3KryaiVGNNJh2iJAwdUD7OpnGBgr8XvWbVQAx6uQ==",
   "success": true,
-  "projectFilePath": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
+  "projectFilePath": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Modulo-biblioteca.revista-.NET\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Biblioteca\\Biblioteca.csproj": {}
+    "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Modulo-biblioteca.revista-.NET\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Biblioteca\\Biblioteca.csproj": {
+    "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Modulo-biblioteca.revista-.NET\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Modulo-biblioteca.revista-.NET\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Modulo-biblioteca.revista-.NET\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Biblioteca\\obj\\",
+        "outputPath": "C:\\6 ClCLO\\Servicios web I\\Biblioteca\\Modulo-biblioteca.revista-.NET\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
