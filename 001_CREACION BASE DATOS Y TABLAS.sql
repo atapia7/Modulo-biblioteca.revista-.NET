@@ -4,6 +4,7 @@ GO
 USE DB_BIBLIOTECA
 
 create table tb_users(
+	
 id int primary key references PERSONA(IdPersona),
 logins varchar(50) unique,
 clave varchar(10),
@@ -428,7 +429,7 @@ update PERSONA set Nombre=@Nombres, Apellido=@Apellidos, Correo=@correo,Clave=@c
 where IdPersona=@codigo
 end
 go
-execute usp_actualiza_persona '2','Julio','Peña','qwe@gmail.com','321','1'
+execute usp_actualiza_persona '2','Julio','Peï¿½a','qwe@gmail.com','321','1'
 go
 
 select*from PERSONA
